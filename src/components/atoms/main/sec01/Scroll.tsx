@@ -5,7 +5,7 @@ const ScrollContainer =  styled.div`
     text-align:center;
     display:flex;
     flex-direction:column;
-    margin-top: 20px;
+    margin-top: 170px;
 `
 const ScrollText = styled.p`
     font-size: 12px;

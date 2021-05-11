@@ -11,8 +11,6 @@ const ButtonContainer = styled.div`
     background: #6ADFDC;
     width: 250px;
     height: 50px;
-    position:absolute;
-    right:0;
     cursor: pointer;
     transition:all 0.7s;
     &:hover h3{

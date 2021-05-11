@@ -1,6 +1,6 @@
-﻿import img01 from "../../../images/box03.jpg"
-import img02 from "../../../images/box02.jpg"
-import img03 from "../../../images/box01.jpg"
+﻿import img01 from "../../../../images/box03.jpg"
+import img02 from "../../../../images/box02.jpg"
+import img03 from "../../../../images/box01.jpg"
 
 export const data = [
     {

@@ -4,14 +4,14 @@ import { useInView } from 'react-intersection-observer'
 import styled from 'styled-components'
 
 const Title = styled(motion.h1)`
-    font-size:100px;
+    font-size:60px;
     font-family: 'Playfair Display',serif;
     letter-spacing:6px;
 `
 
 
 
-const Sec04Title = ({ title, delay }) => {
+const Sec03Title = ({ title, delay }) => {
     const [ref, inView] = useInView({
         rootMargin: "-100px 0px",
         triggerOnce: true,
@@ -31,4 +31,4 @@ const Sec04Title = ({ title, delay }) => {
     )
 }
 
-export default Sec04Title
+export default Sec03Title

@@ -11,22 +11,14 @@ const HeaderContainer = styled(motion.header)`
     left:0;
     width:100vw;
     height:100px;
+    z-index: 99;
+    background-color: rgba(228,253,252, 0.8);
 `
-const headerV =  {
-    hidden: {backgroundColor: "" },
-    visible: {backgroundColor: "rgba(228,253,252, 0.8)"}
-}
 
 const Header = () => {
-    const [ref, inView] = useInView({
-        rootMargin:"0px 0px",
-    });
     return (
         <>
-            <HeaderContainer ref={ref} inView={inView}
-                variants={headerV}
-                animate={inView ? "visible" : "hidden"}
-            >
+            <HeaderContainer>
                 <HeaderNav />
             </HeaderContainer>
         </>

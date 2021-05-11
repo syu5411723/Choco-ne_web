@@ -1,13 +1,13 @@
 ﻿import { motion } from 'framer-motion'
-import React from 'react'
 import { useInView } from 'react-intersection-observer'
 import styled from 'styled-components'
 import titleImg from  "../../../../images/title.png"
 
 const TitleWrapper  = styled(motion.div)`
     position:absolute;
-    top:200px;
+    top:700px;
     left: 60px;
+
 `
 const TitleImg = styled.img`
     width:400px;

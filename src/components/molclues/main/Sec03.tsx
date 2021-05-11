@@ -1,7 +1,7 @@
 ﻿import React from 'react'
 import styled from 'styled-components'
 
-import { data } from "./Sec03Date"
+import { data } from "./data/Sec03Date"
 import SectionTitle from '../../atoms/SectionTitle'
 import Box from '../../atoms/main/sec03/Box'
 import Sec03Button from "../../atoms/main/sec03/Sec03Button"
@@ -9,16 +9,14 @@ import Sec03Button from "../../atoms/main/sec03/Sec03Button"
 
 
 const Sec03Container = styled.div`
-    padding-top: 200px;
-`
-const TitleWrapper = styled.div`
-    display:flex;
-    justify-content:center;
+    width:100%;
+    overflow:hidden;
 `
 const BoxContainer = styled.div`
     display:flex;
     justify-content:space-between;
     width:90%;
+    max-width: 900px;
     margin: 0 auto;
 `
 const ButtonWrapper = styled.div`
@@ -32,9 +30,7 @@ const Sec03 = () => {
     return (
         <>
             <Sec03Container>
-                <TitleWrapper>
-                    <SectionTitle Blue="N" title="EWS" />
-                </TitleWrapper>
+                    <SectionTitle span="N" text01="E" text02="W" text03="S" />
                 <BoxContainer>
                     {data.map((item) => (
                         <Box img={item.BoxImg} title={item.BpxtTitle} text={item.boxText} delay={item.BoxDelay} />

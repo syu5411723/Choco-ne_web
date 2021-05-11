@@ -16,6 +16,12 @@ const ListWrapper = styled.div`
     margin-left: 18vw;
     display:flex;
 `
+const ButtonWrapper = styled.div`
+    width: 250px;
+    height: 50px;
+    position:absolute;
+    right:0;
+`
 
 const HeaderNav = () => {
     return (
@@ -29,7 +35,9 @@ const HeaderNav = () => {
                     <HeaderList props="SHOPS" />
                     <HeaderList props="BUSINES" />
                 </ListWrapper>
+                <ButtonWrapper>
                 <Button buttonText="ONLINE SHOP" />
+                </ButtonWrapper>
             </HeaderInner>
         </>
     )

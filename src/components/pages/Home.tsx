@@ -1,12 +1,13 @@
-﻿import React from 'react'
-import Header from '../templates/Header'
+﻿import Header from '../templates/Header'
 import Main from '../templates/Main'
+import Footer from "../templates/Footer"
 
 const Home = () => {
     return (
         <>
             <Header />
             <Main />
+            <Footer />
         </>
     )
 }
